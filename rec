@@ -14,4 +14,4 @@ mkdir -p "$BASEDIR"
 target_file="$BASEDIR/$logfile"
 script -aq "$target_file"
 
-# less -qr "$target_file"
+# less -fqr "$target_file" > "${target_file}_cleaned.txt"
