@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+# logfile=$1
+# if [[ -z $logfile ]]; then
+#   echo "Usage: $0 log_name"
+#   exit 1
+# fi
+logfile=$(basename $PWD)
+
+BASEDIR="$HOME/Documents/rec"
+mkdir -p "$BASEDIR"
+target_file="$BASEDIR/$logfile"
+script -aq "$target_file"
+
+# less -qr "$target_file"
